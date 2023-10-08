@@ -28,6 +28,18 @@
         <activity android:name=".HomeActivity">
             <!-- ... -->
         </activity>
+        <activity android:name=".NewReservation">
+            <!-- ... -->
+        </activity>
+        <activity android:name=".MyProfile">
+            <!-- ... -->
+        </activity>
+        <activity android:name=".MyReservations">
+            <!-- ... -->
+        </activity>
+        <activity android:name=".ResSummary">
+            <!-- ... -->
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textRecervation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Reservation"
+        android:textColor="#333030"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/SelectDate"
+        android:layout_width="329dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Select Date"
+        android:inputType="textPersonName"
+        android:textColor="#100F0F"
+        android:textIsSelectable="true"
+        app:layout_constraintTop_toBottomOf="@+id/textRecervation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Add constraints for other EditText and buttons as well -->
+
+    <EditText
+        android:id="@+id/SelectTime"
+        android:layout_width="329dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Select Time"
+        android:inputType="time"
+        android:textColor="#100F0F"
+        android:textIsSelectable="true"
+        app:layout_constraintTop_toBottomOf="@+id/SelectDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Add constraints for other EditText and buttons as well -->
+
+    <EditText
+        android:id="@+id/DesFrom"
+        android:layout_width="329dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Destination From"
+        android:inputType="textPersonName"
+        android:textColor="#100F0F"
+        android:textIsSelectable="true"
+        app:layout_constraintTop_toBottomOf="@+id/SelectTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Add constraints for other EditText and buttons as well -->
+
+    <EditText
+        android:id="@+id/DesTo"
+        android:layout_width="329dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Destination To"
+        android:inputType="textPersonName"
+        android:textColor="#100F0F"
+        android:textIsSelectable="true"
+        app:layout_constraintTop_toBottomOf="@+id/DesFrom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Add constraints for other EditText and buttons as well -->
+
+    <EditText
+        android:id="@+id/Seats"
+        android:layout_width="329dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Seats"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/DesTo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonLogin"
+        android:layout_width="143dp"
+        android:layout_height="54dp"
+        android:background="#2196F3"
+        android:text="CONFIRM"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/Seats"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLogin7"
+        android:layout_marginTop="24dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonLogin7"
+        android:layout_width="143dp"
+        android:layout_height="54dp"
+        android:background="#2196F3"
+        android:text="CANCEL"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/Seats"
+        app:layout_constraintStart_toEndOf="@+id/buttonLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -96,7 +96,7 @@
         android:layout_marginTop="12dp"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonLogin"
+        android:id="@+id/buttonConfirmRes"
         android:layout_width="143dp"
         android:layout_height="54dp"
         android:background="#2196F3"
@@ -105,11 +105,11 @@
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/Seats"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonLogin7"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCancleRes"
         android:layout_marginTop="24dp"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonLogin7"
+        android:id="@+id/buttonCancleRes"
         android:layout_width="143dp"
         android:layout_height="54dp"
         android:background="#2196F3"
@@ -117,7 +117,7 @@
         android:textColor="@android:color/white"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/Seats"
-        app:layout_constraintStart_toEndOf="@+id/buttonLogin"
+        app:layout_constraintStart_toEndOf="@+id/buttonConfirmRes"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"/>
 

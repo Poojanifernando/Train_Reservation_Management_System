@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/homeimageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -16,14 +16,14 @@
         app:srcCompat="@drawable/train_image_removebg" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/homeimageView2"
         android:layout_width="388dp"
         android:layout_height="169dp"
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView1"
+        app:layout_constraintTop_toBottomOf="@+id/homeimageView1"
         app:srcCompat="@drawable/logo_removebg" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -37,7 +37,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/homeimageView2" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonprofile"

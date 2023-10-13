@@ -40,6 +40,21 @@
         <activity android:name=".ResSummary">
             <!-- ... -->
         </activity>
+        <activity android:name=".EditProfile">
+            <!-- ... -->
+        </activity>
+        <activity android:name=".DeactivateProfile">
+            <!-- ... -->
+        </activity>
+        <activity android:name=".Registration">
+            <!-- ... -->
+        </activity>
+        <activity android:name=".Updatereservation">
+            <!-- ... -->
+        </activity>
+        <activity android:name=".MyBookings">
+            <!-- ... -->
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

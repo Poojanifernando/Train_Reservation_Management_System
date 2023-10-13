@@ -16,6 +16,7 @@ public class LoginActivity extends AppCompatActivity {
 
         // Get a reference to the "Login" button
         AppCompatButton buttonLogin = findViewById(R.id.buttonLogin);
+        AppCompatButton buttonRegi = findViewById(R.id.buttonRegi);
         // Set an OnClickListener for the button
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +29,17 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+
+        buttonRegi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create an Intent to open the LoginActivity
+                Intent intent = new Intent(LoginActivity.this, Registration.class);
+
+                // Start the LoginActivity
+                startActivity(intent);
+            }
+        });
     }
 
 

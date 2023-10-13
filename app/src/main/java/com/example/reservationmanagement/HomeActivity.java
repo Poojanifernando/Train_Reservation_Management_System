@@ -18,6 +18,7 @@ public class HomeActivity extends AppCompatActivity {
         AppCompatButton buttonnew = findViewById(R.id.buttonnew);
         AppCompatButton buttonprofile = findViewById(R.id.buttonprofile);
         AppCompatButton buttonres = findViewById(R.id.buttonres);
+        AppCompatButton buttonongoing = findViewById(R.id.buttonongoing);
 
         // Set an OnClickListener for the "New Reservations" button
         buttonnew.setOnClickListener(new View.OnClickListener() {
@@ -49,6 +50,17 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Create an Intent to open the MyReservations activity
                 Intent intent = new Intent(HomeActivity.this, MyReservations.class);
+
+                // Start the MyReservations activity
+                startActivity(intent);
+            }
+        });
+
+        buttonongoing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create an Intent to open the my bookings activity
+                Intent intent = new Intent(HomeActivity.this, MyBookings.class);
 
                 // Start the MyReservations activity
                 startActivity(intent);

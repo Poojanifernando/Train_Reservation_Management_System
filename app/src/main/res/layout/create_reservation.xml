@@ -9,7 +9,7 @@
         android:id="@+id/textRecervation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Make Reservation"
+        android:text="New Booking"
         android:textColor="#333030"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -18,6 +18,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         android:layout_marginTop="24dp"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="181dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRecervation"
+        app:srcCompat="@drawable/train_4"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/SelectDate"
@@ -28,7 +39,7 @@
         android:inputType="textPersonName"
         android:textColor="#100F0F"
         android:textIsSelectable="true"
-        app:layout_constraintTop_toBottomOf="@+id/textRecervation"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
@@ -99,7 +110,7 @@
         android:id="@+id/buttonConfirmRes"
         android:layout_width="143dp"
         android:layout_height="54dp"
-        android:background="#2196F3"
+        android:background="#004F98"
         android:text="CONFIRM"
         android:textColor="@android:color/white"
         android:textStyle="bold"
@@ -112,7 +123,7 @@
         android:id="@+id/buttonCancleRes"
         android:layout_width="143dp"
         android:layout_height="54dp"
-        android:background="#2196F3"
+        android:background="#004F98"
         android:text="CANCEL"
         android:textColor="@android:color/white"
         android:textStyle="bold"
@@ -120,5 +131,7 @@
         app:layout_constraintStart_toEndOf="@+id/buttonConfirmRes"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

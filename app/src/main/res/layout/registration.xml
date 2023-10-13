@@ -89,11 +89,11 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonLogin"
+        android:id="@+id/buttonRegister"
         android:layout_width="283dp"
         android:layout_height="52dp"
         android:layout_marginTop="16dp"
-        android:background="#2196F3"
+        android:background="#004F98"
         android:text="REGISTER"
         android:textColor="@android:color/white"
         android:textStyle="bold"

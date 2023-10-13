@@ -5,39 +5,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/homeimageView1"
+
+    <TextView
+        android:id="@+id/welcomeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="4dp"
+        android:text="WELCOME!!!"
+        android:textColor="#004F98"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/homeimageView1"
+        android:layout_width="290dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="92dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/train_image_removebg" />
 
-    <ImageView
-        android:id="@+id/homeimageView2"
-        android:layout_width="388dp"
-        android:layout_height="169dp"
-        android:layout_marginTop="4dp"
+    <TextView
+        android:id="@+id/welcomeafterTextView"
+        android:layout_width="372dp"
+        android:layout_height="68dp"
+        android:text="Make Your Next Travel...."
+        android:textColor="#004F98"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintHorizontal_bias="0.626"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/homeimageView1"
-        app:srcCompat="@drawable/logo_removebg" />
+        app:layout_constraintTop_toBottomOf="@+id/homeimageView1" />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="324dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="4dp"
+        android:text="your all-in-one travel companion! With our app,you can  make reservations and explore a world of  travel experiences.TravelT Mobile is here to make your journey smooth and memorable"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeafterTextView"
+        tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonnew"
         android:layout_width="259dp"
         android:layout_height="49dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/rounded_button"
         android:text="New Reservations"
         android:textColor="@android:color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/homeimageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/intro" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonprofile"
@@ -48,9 +79,9 @@
         android:text="My Profile"
         android:textColor="@android:color/white"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/buttonnew"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonnew" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonres"
@@ -58,11 +89,27 @@
         android:layout_height="49dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/rounded_button"
-        android:text="My Reservations"
+        android:text="Booking History"
         android:textColor="@android:color/white"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/buttonprofile"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonprofile" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonongoing"
+        android:layout_width="259dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/rounded_button"
+        android:text="My Bookings"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonprofile" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
